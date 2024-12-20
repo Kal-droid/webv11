@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './styles/3d-effects.css';
+@import './styles/layout.css';
+@import './styles/transitions.css';
+
+/* Apply Times New Roman to all text by default */
+@layer base {
+  html {
+    font-family: 'Times New Roman', serif;
+  }
+}
+
+/* Smooth scrolling for page transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent content shift during transitions */
+body {
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar during transitions */
+.transitioning {
+  overflow: hidden;
+}
+
+/* Button click animation */
+.clicked {
+  transform: scale(0.95);
+  opacity: 0.9;
+}
+
+/* Focus styles */
+button:focus {
+  outline: none;
+  @apply ring-2 ring-accent ring-offset-2;
+}
+
+/* Improved hover effects */
+.group:hover .group-hover\:translate-x-1 {
+  transform: translateX(0.25rem);
+}

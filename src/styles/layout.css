@@ -1,0 +1,46 @@
+@layer utilities {
+  /* Section Layouts */
+  .section-spacing {
+    @apply py-16 md:py-24;
+  }
+
+  .section-spacing-sm {
+    @apply py-8 md:py-12;
+  }
+
+  /* Background Gradients */
+  .bg-gradient-primary {
+    @apply bg-gradient-to-b from-primary/95 to-primary;
+  }
+
+  .bg-gradient-light {
+    @apply bg-gradient-to-b from-gray-50 to-white;
+  }
+
+  /* Content Containers */
+  .content-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .content-container-sm {
+    @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Section Transitions */
+  .section-transition-top {
+    @apply absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-primary/10 to-transparent;
+  }
+
+  .section-transition-bottom {
+    @apply absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-primary/10 to-transparent;
+  }
+
+  /* Responsive Spacing */
+  .responsive-gap {
+    @apply gap-4 sm:gap-6 lg:gap-8;
+  }
+
+  .responsive-padding {
+    @apply p-4 sm:p-6 lg:p-8;
+  }
+}
