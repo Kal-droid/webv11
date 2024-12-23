@@ -34,7 +34,7 @@ export default function ServiceSlideshow() {
     >
       {/* Slides Container */}
       <motion.div 
-        className="relative h-[400px] bg-white rounded-xl overflow-hidden"
+        className="relative min-h-[600px] md:min-h-[500px] bg-white rounded-xl overflow-hidden"
         whileHover={{ boxShadow: "0 10px 40px rgba(0, 0, 128, 0.1)" }}
         transition={{ duration: 0.3 }}
       >
