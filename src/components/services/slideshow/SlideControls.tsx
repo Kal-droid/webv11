@@ -16,12 +16,12 @@ export default function SlideControls({
   setIsPaused
 }: SlideControlsProps) {
   return (
-    <div className="absolute bottom-4 right-4 flex items-center space-x-2">
+    <div className="absolute bottom-4 right-4 flex items-center space-x-2 z-10"> {/* Added z-index */}
       <Button
         variant="outline"
         size="sm"
         onClick={() => setIsPaused(!isPaused)}
-        className="!p-2"
+        className="!p-2 bg-white/80 backdrop-blur-sm"
         aria-label={isPaused ? "Play slideshow" : "Pause slideshow"}
       >
         {isPaused ? (
@@ -35,7 +35,7 @@ export default function SlideControls({
         variant="outline"
         size="sm"
         onClick={onPrev}
-        className="!p-2"
+        className="!p-2 bg-white/80 backdrop-blur-sm"
         aria-label="Previous slide"
       >
         <ChevronLeft className="w-4 h-4" />
@@ -45,7 +45,7 @@ export default function SlideControls({
         variant="outline"
         size="sm"
         onClick={onNext}
-        className="!p-2"
+        className="!p-2 bg-white/80 backdrop-blur-sm"
         aria-label="Next slide"
       >
         <ChevronRight className="w-4 h-4" />
