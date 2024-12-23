@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Globe, Clock } from 'lucide-react';
+import { Mail, MapPin, Globe, Clock } from 'lucide-react';
 import Section from '../components/common/Section';
 import ContactForm from '../components/contact/ContactForm';
 import AnimatedSection from '../components/common/AnimatedSection';
@@ -15,20 +15,12 @@ const contactInfo = [
     ]
   },
   {
-    icon: Phone,
-    title: 'Phone',
-    details: [
-      '+251 116 681 888',
-      '+251 116 683 037'
-    ]
-  },
-  {
     icon: MapPin,
     title: 'Address',
     details: [
-      'CBE Head Quarters',
+      <>CBE Headquarters 1<sup className="text-xs">st</sup> Floor</>,
       'Churchill Avenue',
-      'Website : cbecapitalsc.com',
+      'Website: cbecapitalsc.com',
       'Addis Ababa, Ethiopia'
     ]
   },
