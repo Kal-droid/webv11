@@ -4,7 +4,7 @@ export const coreStrengths: CoreStrength[] = [
   {
     id: 'global-expertise',
     title: 'Global Expertise',
-    description: 'Our management include professionals with many Years of experience with several of the world\'s largest investment firms',
+    description: 'Our management include professionals with many years of experience with several of the world\'s largest investment firms',
     icon: 'Globe2',
     capabilities: [
       'International market knowledge',
